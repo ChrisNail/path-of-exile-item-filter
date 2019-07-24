@@ -1,0 +1,398 @@
+#### //// DIVINATION CARDS (PURPLE) \\\\ ####
+Show
+    Class "Card"
+    SetBackgroundColor 0 0 0 75
+    SetBorderColor 156 39 176 125
+    SetTextColor 255 255 255 225
+    #PlayAlertSound 5 200
+
+#### //// CURRENCY (YELLOW) \\\\ ####
+Show
+    BaseType "Mirror of Kalandra"
+    SetBackgroundColor 0 0 0 75
+    SetTextColor 255 193 7 225
+    SetBorderColor 255 235 59 125
+    #SetFontSize 45
+    #PlayAlertSound 9 300
+
+Show
+    BaseType "Exalted Orb" "Eternal Orb" "Divine Orb"
+    SetBackgroundColor 0 0 0 75
+    SetTextColor 156 39 176 225
+    SetBorderColor 255 235 59 125
+    #SetFontSize 42
+    #PlayAlertSound 8 300
+
+
+Show
+    BaseType "Chaos Orb" "Gemcutter's Prism" "Regal Orb" "Orb of Alchemy" "Vaal Orb" "Orb of Fusing" "Orb of Scouring" "Blessed Orb" "Cartographer's Chisel" "Orb of Regret"
+    SetBackgroundColor 0 0 0 75
+    SetTextColor 3 169 244 225
+    SetBorderColor 255 235 59 125
+    #SetFontSize 36
+    #PlayAlertSound 6 200
+
+Show
+    Class "Currency" "Incubator"
+    SetBackgroundColor 0 0 0 75
+    SetTextColor 200 200 200 225
+    SetBorderColor 255 235 59 125
+    #PlayAlertSound 1 100
+
+#### BLACKSMITH'S WHETSTONE
+Show
+    Quality = 20
+    Rarity = Normal
+    Class "Claw" "Dagger" "Wand" "One Hand" "Thrusting" "Bow" "Staves" "Two Hand"
+    SetBackgroundColor 0 0 0 75
+    SetTextColor 200 200 200 225
+    SetBorderColor 255 235 59 125
+
+Show
+    Quality = 20
+    Rarity = Magic
+    Class "Claw" "Dagger" "Wand" "One Hand" "Thrusting" "Bow" "Staves" "Two Hand"
+    SetBackgroundColor 0 0 0 75
+    SetTextColor 3 169 244 225
+    SetBorderColor 255 235 59 125
+
+Show
+    Quality = 20
+    Rarity = Rare
+    Class "Claw" "Dagger" "Wand" "One Hand" "Thrusting" "Bow" "Staves" "Two Hand"
+    SetBackgroundColor 0 0 0 75
+    SetTextColor 255 235 59 225
+    SetBorderColor 255 235 59 125
+
+#### ARMOURER'S SCRAP
+Show
+    Quality = 20
+    Rarity = Normal
+    Class "Belt" "Gloves" "Boots" "Body Armours" "Helmets" "Shields" "Sceptres"
+    SetBackgroundColor 0 0 0 75
+    SetTextColor 200 200 200 225
+    SetBorderColor 255 235 59 125
+
+Show
+    Quality = 20
+    Rarity = Magic
+    Class "Belt" "Gloves" "Boots" "Body Armours" "Helmets" "Shields" "Sceptres"
+    SetBackgroundColor 0 0 0 75
+    SetTextColor 3 169 244 225
+    SetBorderColor 255 235 59 125
+
+Show
+    Quality = 20
+    Rarity = Rare
+    Class "Belt" "Gloves" "Boots" "Body Armours" "Helmets" "Shields" "Sceptres"
+    SetBackgroundColor 0 0 0 75
+    SetTextColor 255 235 59 225
+    SetBorderColor 255 235 59 125
+
+#### GLASSBLOWER'S BAUBLE (Vendor 40% Total Quality)
+Show
+    Quality >= 10
+    Rarity = Normal
+    Class "Flasks"
+    SetBackgroundColor 0 0 0 75
+    SetTextColor 200 200 200 225
+    SetBorderColor 255 235 59 125
+
+Show
+    Quality >= 10
+    Rarity = Magic
+    Class "Flasks"
+    SetBackgroundColor 0 0 0 75
+    SetTextColor 3 169 244 225
+    SetBorderColor 255 235 59 125
+
+#### CARTOGRAPHER'S CHISEL (Vendor 20% Hammer + Any Endgame Map)
+Show
+    Rarity = Normal
+    BaseType "Gavel" "Stone Hammer" "Rock Breaker"
+    SetBackgroundColor 0 0 0 75
+    SetTextColor 200 200 200 225
+    SetBorderColor 255 235 59 125
+
+#### JEWELLER'S ORB (Vendor 6 Sockets x7)
+Show
+    Rarity = Normal
+    Sockets = 6
+    LinkedSockets < 5
+    SetBackgroundColor 0 0 0 75
+    SetTextColor 200 200 200 225
+    SetBorderColor 255 235 59 125
+
+Show
+    Rarity = Magic
+    Sockets = 6
+    LinkedSockets < 5
+    SetBackgroundColor 0 0 0 75
+    SetTextColor 3 169 244 225
+    SetBorderColor 255 235 59 125
+
+Show
+    Rarity = Rare
+    Sockets = 6
+    LinkedSockets < 5
+    SetBackgroundColor 0 0 0 75
+    SetTextColor 255 235 59 225
+    SetBorderColor 255 235 59 125
+
+#### CHROMATIC ORB (Vendor 3 linked of each color)
+Show
+    LinkedSockets >= 3
+    Rarity = Normal
+    SocketGroup "RGB"
+    SetBackgroundColor 0 0 0 75
+    SetTextColor 200 200 200 225
+    SetBorderColor 255 235 59 125
+
+Show
+    LinkedSockets >= 3
+    Rarity = Magic
+    SocketGroup "RGB"
+    SetBackgroundColor 0 0 0 75
+    SetTextColor 3 169 244 225
+    SetBorderColor 255 235 59 125
+
+#### //// Items \\\\ ####
+Show
+    LinkedSockets >= 5
+    Rarity = Normal
+    SetBackgroundColor 0 0 0 75
+    SetTextColor 200 200 200 225
+    SetBorderColor 244 67 54 125
+
+Show
+    LinkedSockets >= 5
+    Rarity = Magic
+    SetBackgroundColor 0 0 0 75
+    SetTextColor 3 169 244 225
+    SetBorderColor 244 67 54 125
+
+Show
+    LinkedSockets >= 5
+    Rarity = Rare
+    SetBackgroundColor 0 0 0 75
+    SetTextColor 255 235 59 225
+    SetBorderColor 244 67 54 125
+
+#### SKILL GEMS (BLUE)
+Show
+    Class "Skill Gems"
+    SetBackgroundColor 0 0 0 75
+    SetTextColor 255 255 255 225
+    SetBorderColor 33 150 243 125
+
+#### QUEST ITEMS (GREEN)
+Show
+    Class "Quest Items"
+    SetBackgroundColor 0 0 0 75
+    SetTextColor 255 255 255 225
+    SetBorderColor 76 175 80 125
+
+#### MAPS (ORANGE)
+Show
+    Class "Maps"
+    Rarity = Normal
+    SetBackgroundColor 0 0 0 75
+    SetTextColor 200 200 200 225
+    SetBorderColor 255 152 0 125
+
+Show
+    Class "Maps"
+    Rarity = Magic
+    SetBackgroundColor 0 0 0 75
+    SetTextColor 3 169 244 225
+    SetBorderColor 255 152 0 125
+
+Show
+    Class "Maps"
+    Rarity = Rare
+    SetBackgroundColor 0 0 0 75
+    SetTextColor 255 235 59 225
+    SetBorderColor 255 152 0 125
+
+Show
+    Class "Maps"
+    Rarity = Unique
+    SetBackgroundColor 0 0 0 75
+    SetTextColor 255 193 7 225
+    SetBorderColor 255 152 0 125
+
+#### HIDING
+Hide
+    ItemLevel > 10
+    DropLevel <= 2
+    Rarity = Normal Magic
+
+Hide
+    ItemLevel > 12
+    DropLevel <= 4
+    Rarity = Normal Magic
+
+Hide
+    ItemLevel > 14
+    DropLevel <= 6
+    Rarity = Normal Magic
+
+Hide
+    ItemLevel > 16
+    DropLevel <= 8
+    Rarity = Normal Magic
+
+Hide
+    ItemLevel > 18
+    DropLevel <= 10
+    Rarity = Normal Magic
+
+Hide
+    ItemLevel > 20
+    DropLevel <= 12
+    Rarity = Normal Magic
+
+Hide
+    ItemLevel > 22
+    DropLevel <= 14
+    Rarity = Normal Magic
+
+Hide
+    ItemLevel > 24
+    DropLevel <= 16
+    Rarity = Normal Magic
+
+Hide
+    ItemLevel > 26
+    DropLevel <= 18
+    Rarity = Normal Magic
+
+Hide
+    ItemLevel > 28
+    DropLevel <= 20
+    Rarity = Normal Magic
+
+Hide
+    ItemLevel > 30
+    DropLevel <= 22
+    Rarity = Normal Magic
+
+Hide
+    ItemLevel > 32
+    DropLevel <= 24
+    Rarity = Normal Magic
+
+Hide
+    ItemLevel > 34
+    DropLevel <= 26
+    Rarity = Normal Magic
+
+Hide
+    ItemLevel > 36
+    DropLevel <= 28
+    Rarity = Normal Magic
+
+Hide
+    ItemLevel > 38
+    DropLevel <= 30
+    Rarity = Normal Magic
+
+Hide
+    ItemLevel > 40
+    DropLevel <= 32
+    Rarity = Normal Magic
+
+Hide
+    ItemLevel > 42
+    DropLevel <= 34
+    Rarity = Normal Magic
+
+Hide
+    ItemLevel > 44
+    DropLevel <= 36
+    Rarity = Normal Magic
+
+Hide
+    ItemLevel > 46
+    DropLevel <= 38
+    Rarity = Normal Magic
+
+Hide
+    ItemLevel > 48
+    DropLevel <= 40
+    Rarity = Normal Magic
+
+Hide
+    ItemLevel > 50
+    DropLevel <= 42
+    Rarity = Normal Magic
+
+Hide
+    ItemLevel > 52
+    DropLevel <= 44
+    Rarity = Normal Magic
+
+Hide
+    ItemLevel > 54
+    DropLevel <= 46
+    Rarity = Normal Magic
+
+Hide
+    ItemLevel > 56
+    DropLevel <= 48
+    Rarity = Normal Magic
+
+Hide
+    ItemLevel > 58
+    DropLevel <= 50
+    Rarity = Normal Magic
+
+Hide
+    ItemLevel > 60
+    DropLevel <= 52
+    Rarity = Normal Magic
+
+Hide
+    ItemLevel > 62
+    DropLevel <= 54
+    Rarity = Normal Magic
+
+Hide
+    ItemLevel > 64
+    DropLevel <= 56
+    Rarity = Normal Magic
+
+Hide
+    ItemLevel > 66
+    DropLevel <= 58
+    Rarity = Normal Magic
+
+Hide
+    ItemLevel > 68
+    DropLevel <= 60
+    Rarity = Normal Magic
+
+#### SHOW ITEMS (RED)
+Show
+    Rarity = Normal
+    SetBackgroundColor 0 0 0 75
+    SetTextColor 200 200 200 225
+    SetBorderColor 244 67 54 125
+
+Show
+    Rarity = Magic
+    SetBackgroundColor 0 0 0 75
+    SetTextColor 3 169 244 225
+    SetBorderColor 244 67 54 125
+
+Show
+    Rarity = Rare
+    SetBackgroundColor 0 0 0 75
+    SetTextColor 255 235 59 225
+    SetBorderColor 244 67 54 125
+
+Show
+    Rarity = Unique
+    SetBackgroundColor 0 0 0 75
+    SetTextColor 255 193 7 225
+    SetBorderColor 244 67 54 125
